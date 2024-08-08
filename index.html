@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <!-- Replace 'your-photo-url' with the actual URL of your uploaded photo -->
+            <img src="https://i.ibb.co.com/wpj8fst/Whats-App-Image-2024-08-08-at-10-53-28.jpg" alt="Profile Photo" class="profile-photo">
+            <h1>Farhan Bintang Adrianto</h1>
+        </header>
+        <section class="biodata">
+            <p><strong>Umur:</strong> 18</p>
+            <p><strong>Tempat, tanggal lahir:</strong> Surabaya, 14 September, 2005</p>
+            <p><strong>Tempat tinggal:</strong> Surabaya, Indonesia</p>
+            <p><strong>Hobi:</strong> Membaca buku, bermain basket, liburan</p>
+        </section>
+        <!-- Contact button -->
+        <button class="contact-btn" onclick="toggleContact()">Contact</button>
+        <!-- Contact information -->
+        <div id="contact-info" class="contact-info">
+            <p>Nomor telepon: +62 812 3386 2127</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleContact() {
+            var contactInfo = document.getElementById('contact-info');
+            if (contactInfo.style.display === 'none' || contactInfo.style.display === '') {
+                contactInfo.style.display = 'block';
+            } else {
+                contactInfo.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
